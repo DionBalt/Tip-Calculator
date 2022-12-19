@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Bill
+                </label>
+                <div class="ibput_box">
+                    <span>$</span>
+                    <input type="number" value="0.00" id="bill" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="lbl">Tip</span>
+                <span id="tip_amount" class="val">
+                   $0 
+                </span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <span class="lbl">Total Amount</span>
+                <span id="total_amount" class="val">
+                    $0
+                </span>
+            </div>
+        </section>
+        <section>
+
+            <div class="wrapper">
+                <label for="tip" class="lbl">
+                   Tip 
+                </label>
+                <span id="tip_percentage" class="val">
+                    0
+                </span>
+            </div>
+
+            <input type="range" min="1" id="tip" value="15">
+
+            <div class="wrapper">
+                <label for="no_of_people" class="lbl">
+                    No. of People
+                </label>
+                <span id="split_num" class="val">
+                    #0
+                </span>
+            </div>
+
+            <input type="range" min="1" max="20" id="no_of_people" value="1">
+
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <span class="lbl">
+                    Tip per Person
+                </span>
+                <span id="tip_per_person" class="val">
+                    $0
+                </span>
+            </div>
+
+            <div class="wrapper">
+                <span class="lbl">
+                    Total per Person
+                </span>
+                <span id="total_per_person" class="val">
+                    $0
+                </span>
+            </div>
+
+            <div class="wrapper">
+                <span class="lbl">
+                    Have you had a good time?
+                </span>
+                <span class="val">
+                    :)
+                </span>
+            </div>
+
+        </section>
+
+    </div>  
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
